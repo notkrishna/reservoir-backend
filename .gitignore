@@ -1,0 +1,8 @@
+# drf/
+# **/__pycache__/
+.env
+db.sqlite3
+django.sh
+.dockerignore
+nginx
+.venv
