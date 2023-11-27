@@ -1,2 +1,2 @@
 # reservoir-backend
-Reservoir backend code
+Reservoir backend public code
