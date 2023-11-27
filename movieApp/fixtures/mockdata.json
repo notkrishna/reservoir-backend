@@ -1,0 +1,11 @@
+[
+    {
+        "model": "movieApp.MovieModel",
+        "pk":1,
+        "fields": {
+            "movie_name":"Cars",
+            "rankings":200,
+            "ratings":1000
+        }
+    }
+]

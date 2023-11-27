@@ -1,0 +1,15 @@
+FROM postgres:13
+
+# Copy the .env file to the container
+COPY .env /app/.env
+
+# Set the working directory
+WORKDIR /app
+
+# Substitute the environment variables in the script
+COPY entrypoint.sh /docker-entrypoint-initdb.d/
+RUN chmod +x /docker-entrypoint-initdb.d/entrypoint.sh && \
+    cat /app/.env | envsubst >> /docker-entrypoint-initdb.d/entrypoint.sh
+
+# Expose the default PostgreSQL port
+EXPOSE 5432
