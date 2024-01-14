@@ -19,14 +19,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.x
+        python-version: 3.10.6
 
     - name: Install dependencies
       run: |
-        sudo apt-get install libssl-dev libffi-dev
-        python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Run tests
       run: |
-        python manage.py test
+        python3 manage.py test
