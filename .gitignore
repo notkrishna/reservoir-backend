@@ -6,4 +6,4 @@ django.sh
 .dockerignore
 nginx
 .venv
-venv/
+venv
